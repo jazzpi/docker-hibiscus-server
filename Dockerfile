@@ -8,8 +8,8 @@ RUN apt-get -y install default-jre
 RUN apt-get -y install postgresql-client
 
 RUN apt-get -y install wget unzip
-RUN wget http://www.willuhn.de/products/hibiscus-server/releases/hibiscus-server-2.6.14.zip
-RUN unzip hibiscus-server-2.6.14.zip -d / && rm hibiscus-server-2.6.14.zip
+RUN wget https://www.willuhn.de/products/hibiscus-server/releases/hibiscus-server-2.8.1.zip
+RUN unzip hibiscus-server-2.8.1.zip -d / && rm hibiscus-server-2.8.1.zip
 
 ADD wrap.sh /wrap
 ENTRYPOINT ["/wrap"]
