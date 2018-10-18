@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:latest
 
 # Enable this during development.
 #RUN echo 'Acquire::http { Proxy "http://192.168.59.103:3142"; };' >> /etc/apt/apt.conf.d/01proxy
