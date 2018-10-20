@@ -6,7 +6,7 @@ set -e
 # http://www.willuhn.de/products/hibiscus-server/install.php
 
 # delete db config for use of embedded db
-rm -f /srv/hibiscus/cfg/de.willuhn.jameica.hbci.rmi.HBCIDBService.properties
+rm -f /hibiscus-server/cfg/de.willuhn.jameica.hbci.rmi.HBCIDBService.properties
 
 # Write HTTP settings
 ssl_val=false
