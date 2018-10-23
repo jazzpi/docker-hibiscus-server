@@ -9,13 +9,13 @@ set -e
 rm -f /hibiscus-server/cfg/de.willuhn.jameica.hbci.rmi.HBCIDBService.properties
 
 # Write HTTP settings
-ssl_val=false
-if [ "$USE_SSL" != "" ]; then
-    ssl_val=true
+ssl_val=true
+if [ "$USE_SSL" == "0" ]; then
+    ssl_val=false
 fi
 cat > /hibiscus-server/cfg/de.willuhn.jameica.webadmin.Plugin.properties <<EOF
 listener.http.address=0.0.0.0
-listener.http.port=${PORT-8080}
+listener.http.port=${PORT-38080}
 listener.http.auth=true
 listener.http.ssl=${ssl_val}
 EOF
