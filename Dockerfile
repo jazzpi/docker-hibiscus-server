@@ -6,8 +6,8 @@ FROM ubuntu:18.04
 RUN apt-get update && apt-get -y upgrade
 RUN apt-get -y install openjdk-8-jdk wget unzip
 
-RUN wget https://www.willuhn.de/products/hibiscus-server/releases/hibiscus-server-2.8.1.zip
-RUN unzip hibiscus-server-2.8.1.zip -d / && rm hibiscus-server-2.8.1.zip
+RUN wget https://www.willuhn.de/products/hibiscus-server/releases/hibiscus-server-2.8.16.zip
+RUN unzip hibiscus-server-2.8.16.zip -d / && rm hibiscus-server-2.8.16.zip
 
 ADD wrap.sh /wrap
 ENTRYPOINT ["/wrap"]
