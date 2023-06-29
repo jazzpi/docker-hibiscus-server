@@ -7,8 +7,11 @@ Hibiscus Payment-Server Docker Image
 
 Usage:
 
-    $ docker run -e PASSWORD=foo -p 8080:8080 schlickspringer/docker-hibiscus-server
-
+```
+TAG=docker-hibiscus-server:local
+docker build -t $TAG .
+docker run -e PASSWORD=foo -p 8080:8080 $TAG
+```
 
 **PASSWORD** is the (required) password used to encrypt the database.
 
