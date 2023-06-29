@@ -6,7 +6,12 @@ FROM ubuntu:20.04
 RUN apt-get update && apt-get -y upgrade
 RUN apt-get -y install openjdk-8-jdk wget unzip
 
-RUN wget https://www.willuhn.de/products/hibiscus-server/releases/hibiscus-server-2.10.9.zip 
+
+# For direct download from willuhn.de:
+# RUN wget https://www.willuhn.de/products/hibiscus-server/releases/hibiscus-server-2.10.9.zip 
+# But let's use the copy included in ./vendor/ instead:
+COPY vendor/willuhn/hibiscus-server-2.10.9.zip ./hibiscus-server-2.10.9.zip
+
 RUN unzip ./hibiscus-server-2.10.9.zip 
 
 ADD wrap.sh /wrap
