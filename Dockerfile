@@ -8,9 +8,9 @@ RUN apt-get -y install openjdk-8-jdk wget unzip
 
 
 # For direct download from willuhn.de:
-# RUN wget https://www.willuhn.de/products/hibiscus-server/releases/hibiscus-server-2.10.9.zip 
+RUN wget https://www.willuhn.de/products/hibiscus-server/releases/hibiscus-server-2.10.20.zip 
 # But let's use the copy included in ./vendor/ instead:
-COPY vendor/willuhn/hibiscus-server-2.10.9.zip ./hibiscus-server-2.10.9.zip
+# COPY vendor/willuhn/hibiscus-server-2.10.9.zip ./hibiscus-server-2.10.20.zip
 
 RUN unzip ./hibiscus-server-2.10.9.zip 
 
