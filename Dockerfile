@@ -12,7 +12,7 @@ RUN wget https://www.willuhn.de/products/hibiscus-server/releases/hibiscus-serve
 # But let's use the copy included in ./vendor/ instead:
 # COPY vendor/willuhn/hibiscus-server-2.10.9.zip ./hibiscus-server-2.10.20.zip
 
-RUN unzip ./hibiscus-server-2.10.9.zip 
+RUN unzip ./hibiscus-server-2.10.20.zip 
 
 ADD wrap.sh /wrap
 ENTRYPOINT ["/wrap"]
