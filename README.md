@@ -8,7 +8,7 @@ Hibiscus Payment-Server Docker Image
 Usage:
 
 ```
-TAG=v2.10.24
+TAG=v2.10.25
 docker run -e PASSWORD=foo -p 38080:38080 -v /mnt/pool/apps/hibiscus:/srv/hibiscus ghcr.io/jazzpi/docker-hibiscus-server:$TAG
 ```
 
